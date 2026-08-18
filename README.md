@@ -58,7 +58,6 @@ data, never used for training or model selection).
 **Inference throughput** (Kaggle T4 GPU, batch_size=16, fp16): 10.5 ms/image,
 measured on the official 400-image test set (`kla-restoration-NoisyLR`).
 
-See `results/sample_comparison.png` for a validation-set example and
-`results/test_set_spot_check.png` for real test-set restorations (including
+See `results/test_set_spot_check.png` for real test-set restorations (including
 one strong case and one honest failure case with visible remaining blur on
 high-frequency textured content).
