@@ -21,7 +21,7 @@ torch version used: [output of `torch.__version__` in your training/inference en
 
 ## Running Inference
 
-python run.py <<input-dir>> <<output-dir>>
+python run.py <input-dir<input-dir>> <input-dir<output-dir>>
 
 **Example:**
 
