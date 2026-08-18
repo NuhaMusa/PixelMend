@@ -8,7 +8,7 @@
 NAFNet-style U-Net restoration model for joint denoising (speckle + Gaussian)
 and 2x super-resolution on grayscale semiconductor inspection images.
 
-- Architecture: NAFNet U-Net (encoder-bottleneck-decoder, 4.95M params)
+- Architecture: NAFNet U-Net (encoder-bottleneck-decoder, 4.95M params )
 - Loss: Charbonnier + SSIM (w_char=1.0, w_ssim=0.2)
 - Best validation PSNR: 29.150 dB (+5.87 dB over bicubic baseline)
 - Best validation SSIM: 0.8028
