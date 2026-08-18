@@ -1,7 +1,7 @@
 # KLA Hackathon — AI-Based Restoration of Degraded Images
 
-**Team:** [Your actual team name — e.g. PixelMend]
-**Institution:** [Your college/university name]
+**Team:** PixelMend 
+
 
 ## Overview
 
