@@ -17,7 +17,7 @@ and 2x super-resolution on grayscale semiconductor inspection images.
 
 pip install -r requirements.txt
 
-torch version used: [output of `torch.__version__` in your training/inference environment — e.g. 2.4.0+cu121]
+Tested with: torch 2.10.0+cu128, torchvision 0.25.0+cu128 (Kaggle T4 GPU)
 
 ## Running Inference
 
@@ -45,9 +45,6 @@ python run.py /path/to/degraded_images /path/to/restored_output
 
 ## Training
 
-See `training.ipynb` (or the Kaggle notebook this repo was exported from) for
-the full training pipeline. Key details:
-
 - Dataset: KLA-provided paired GT/NoisyLR images (3200 pairs, 90/10 train/val split)
 - On-the-fly synthetic degradation augmentation (speckle + Gaussian + downsample,
   randomized order and severity) alongside the fixed on-disk degraded pairs
@@ -71,7 +68,7 @@ data, never used for training or model selection).
 | SSIM   | 0.5629            | 0.8028    | +0.2399                    |
 | LPIPS  | 0.4312            | 0.2390    | -0.1922 (lower is better)  |
 
-**Inference throughput** (Kaggle T4 GPU, batch_size=16, fp16): 10.5 ms/image,
+**Inference throughput** (Kaggle T4 GPU, batch_size=16, fp16): 11.5 ms/image,
 measured on the official 400-image test set (`kla-restoration-NoisyLR`).
 
 See `results/test_set_spot_check.png` for real test-set restorations (including
