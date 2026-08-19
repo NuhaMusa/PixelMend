@@ -14,9 +14,9 @@ and 2x super-resolution on grayscale semiconductor inspection images.
 - Best validation SSIM: 0.8028
 
 ## Environment Setup
-'''bash
+
 pip install -r requirements.txt
-'''
+
 Tested with: torch 2.10.0+cu128, torchvision 0.25.0+cu128 (Kaggle T4 GPU)
 
 ## Running Inference
